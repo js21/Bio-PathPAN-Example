@@ -6,10 +6,10 @@ BEGIN { unshift( @INC, './lib' ) }
 BEGIN { unshift( @INC, '../lib' ) }
 BEGIN {
     use Test::Most;
-    use_ok('Bio::Darkpan::CommandLine::SpecialScript');
+    use_ok('Bio::PathPAN::CommandLine::SpecialScript');
 }
 
-my $script_name = 'Bio::Darkpan::CommandLine::SpecialScript';
+my $script_name = 'Bio::Pathkpan::CommandLine::SpecialScript';
 my $script_parameters = '-s Light';
 my @input_args = split(" ", $script_parameters);
 

@@ -1,4 +1,4 @@
-package Bio::Darkpan::Example;
+package Bio::PathPAN::Example;
 
 # ABSTRACT: Choose your CPAN side of the force. Defaults to the dark side
 

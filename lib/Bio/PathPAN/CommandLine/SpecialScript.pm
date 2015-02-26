@@ -1,4 +1,4 @@
-package Bio::Darkpan::CommandLine::SpecialScript;
+package Bio::PathPAN::CommandLine::SpecialScript;
 
 # ABSTRACT: Choose your CPAN force side. Defaults to the dark side
 
@@ -11,7 +11,7 @@ Gets commandline arguments and does something with them
 use Moose;
 use Getopt::Long qw(GetOptionsFromArray);
 use Cwd 'abs_path';
-use Bio::Darkpan::Example;
+use Bio::PathPAN::Example;
 use Capture::Tiny;
 use File::Basename;
 use File::Fetch;
@@ -43,7 +43,7 @@ sub run {
 
   my ($self) = @_;
   my $now = DateTime::Tiny->now;
-  my $force_balance = Bio::Darkpan::Example->new(
+  my $force_balance = Bio::PathPAN::Example->new(
       force_side => $self->side,
       year       => $now->year,
       day        => $now->day,

@@ -1,0 +1,19 @@
+#!/usr/bin/env perl
+
+package Bio::Darkpan::Bin::SpecialScript;
+
+# ABSTRACT: mock
+# PODNAME: special_script
+
+=head1 SYNOPSIS
+
+Testing feasibility of a darkpan
+
+=cut
+
+BEGIN { unshift( @INC, '../lib' ) }
+BEGIN { unshift( @INC, './lib' ) }
+
+use Bio::Darkpan::CommandLine::SpecialScript;
+
+Bio::Darkpan::CommandLine::SpecialScript->new(args => \@ARGV, script_name => $0)->run;

@@ -9,7 +9,7 @@ Testing feasibility of a darkpan with Pinto
 =cut
 
 use Moose;
-use GD::Graph;
+use GD::Graph; #This is not really being used. It's just here to test an extra dependency
 
 has 'force_side' => ( is => 'rw', isa => 'Str');
 has 'year' => ( is => 'rw', isa => 'Str');

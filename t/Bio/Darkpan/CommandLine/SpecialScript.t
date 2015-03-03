@@ -9,7 +9,7 @@ BEGIN {
     use_ok('Bio::PathPAN::CommandLine::SpecialScript');
 }
 
-my $script_name = 'Bio::Pathkpan::CommandLine::SpecialScript';
+my $script_name = 'Bio::PathPAN::CommandLine::SpecialScript';
 my $script_parameters = '-s Light';
 my @input_args = split(" ", $script_parameters);
 
